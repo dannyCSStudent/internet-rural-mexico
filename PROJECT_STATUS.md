@@ -3,8 +3,8 @@
 # Starlink Organic Referral Machine — Project Status
 
 **Last updated:** 2026-09-07  
-**Status:** 🟡 Foundation / Planning  
-**Current milestone:** Establish project foundation before coding
+**Status:** 🟡 Foundation / Web app conversion started  
+**Current milestone:** Convert the template into the Internet Rural México web foundation
 
 ## 1. Executive status
 
@@ -48,9 +48,9 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [ ] First geographic focus
 
 ### Technical
-- [ ] Choose final stack
-- [ ] Create Git repository
-- [ ] Initialize application
+- [x] Choose final stack
+- [x] Create Git repository
+- [x] Initialize application
 - [ ] Configure deployment
 - [ ] Build MVP website
 
@@ -68,14 +68,10 @@ The software/marketing system itself has **not** been built yet. We are intentio
 ## 4. Current phase: Foundation
 
 Immediate work:
-1. Select the first target customer.
-2. Select the geographic starting market.
-3. Choose a brand direction.
-4. Research competitors and demand.
-5. Define the MVP.
-6. Choose the technical stack.
-7. Create the Git repository.
-8. Start Codex with a bounded foundation task.
+1. Convert the active web app from starter-template content to Internet Rural México.
+2. Keep API and mobile dormant during the MVP foundation.
+3. Establish the locked MVP routes with foundation-level content.
+4. Verify lint, type checks, build, and development startup where practical.
 
 ## 5. What we are NOT building yet
 
@@ -131,14 +127,14 @@ Add Supabase/database only when the MVP actually requires persistent application
 
 ## 8. Codex timing
 
-**Do not start Codex yet for application coding.**
+Codex may work on bounded foundation tasks only. Do not proceed into advanced application features without a new explicit task.
 
-Start Codex after:
-- [ ] Initial audience is selected
-- [ ] Brand direction is selected
-- [ ] MVP requirements are approved
-- [ ] Stack is selected
-- [ ] Repository location is selected
+Prerequisites now satisfied:
+- [x] Initial audience is selected
+- [x] Brand direction is selected
+- [x] MVP requirements are approved
+- [x] Stack is selected
+- [x] Repository location is selected
 
 ### First Codex task
 
@@ -160,21 +156,15 @@ When ready, tell Codex:
 
 ## 10. Current blockers
 
-None. The project is intentionally waiting for strategic decisions before implementation.
+None for the web foundation. Current Starlink pricing, availability, plan details, and referral rules still require verification from official Starlink sources before publishing purchase-oriented content.
 
 ## 11. Next action
 
-**Define the first customer and market before creating the repository.**
-
-Then:
-
-```text
-Audience → Brand → Domain → MVP specification → Git repository → Codex → Website
-```
+Complete Codex Task 01, then review the diff before moving to the next bounded MVP task.
 
 ## 12. Success milestones
 
-- [ ] Repository initialized
+- [x] Repository initialized
 - [ ] Website MVP live
 - [ ] First organic visitor
 - [ ] First referral click
