@@ -272,14 +272,18 @@ h3 {
 }
 
 .feature-grid,
-.text-list {
+.text-list,
+.decision-steps {
   display: grid;
   gap: 16px;
   grid-template-columns: repeat(3, minmax(0, 1fr));
 }
 
 .feature-grid article,
-.text-list article {
+.text-list article,
+.decision-steps article,
+.checklist-block,
+.source-block {
   background: rgba(255, 255, 255, 0.56);
   border: 1px solid var(--line);
   border-radius: 8px;
@@ -289,6 +293,40 @@ h3 {
 .feature-grid p,
 .text-list p {
   color: rgba(31, 41, 51, 0.78);
+  line-height: 1.65;
+  margin-bottom: 0;
+}
+
+.text-list h2 {
+  color: var(--deep-green);
+  font-size: 1.2rem;
+  line-height: 1.2;
+  margin-bottom: 12px;
+}
+
+.split-band {
+  border-top: 1px solid var(--line);
+  padding-top: 72px;
+}
+
+.decision-steps article {
+  background: var(--deep-green);
+  color: var(--off-white);
+}
+
+.decision-steps span {
+  color: var(--warm-sand);
+  display: block;
+  font-weight: 850;
+  margin-bottom: 28px;
+}
+
+.decision-steps h3 {
+  color: var(--off-white);
+}
+
+.decision-steps p {
+  color: rgba(247, 245, 239, 0.82);
   line-height: 1.65;
   margin-bottom: 0;
 }
@@ -307,6 +345,40 @@ h3 {
 
 .text-list {
   margin: 34px 0 26px;
+}
+
+.checklist-block,
+.source-block {
+  margin: 18px 0 0;
+}
+
+.checklist-block h2,
+.source-block h2 {
+  color: var(--deep-green);
+  font-size: 1.35rem;
+  margin-bottom: 14px;
+}
+
+.checklist-block ul,
+.source-block ul {
+  color: rgba(31, 41, 51, 0.8);
+  display: grid;
+  gap: 10px;
+  line-height: 1.55;
+  margin: 0;
+  padding-left: 20px;
+}
+
+.source-block p {
+  color: rgba(31, 41, 51, 0.7);
+  margin-bottom: 12px;
+}
+
+.source-block a {
+  color: var(--deep-green);
+  font-weight: 800;
+  text-decoration: underline;
+  text-underline-offset: 3px;
 }
 
 .site-footer {
@@ -354,7 +426,8 @@ h3 {
   }
 
   .feature-grid,
-  .text-list {
+  .text-list,
+  .decision-steps {
     grid-template-columns: 1fr;
   }
 

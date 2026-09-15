@@ -1,6 +1,16 @@
 import Link from "next/link";
+import type { Metadata } from "next";
 
 import { disclosure } from "./site-content";
+
+export const metadata: Metadata = {
+  title: "Internet Rural México",
+  description:
+    "Información independiente para entender opciones de Internet en ranchos, fincas, casas y negocios rurales antes de gastar.",
+  alternates: {
+    canonical: "/",
+  },
+};
 
 export default function Home() {
   return (
@@ -60,6 +70,39 @@ export default function Home() {
             <p>
               Confirmar costos, instalación, limitaciones y datos oficiales
               antes de usar un enlace de referencia.
+            </p>
+          </article>
+        </div>
+      </section>
+
+      <section className="content-band split-band">
+        <div className="section-heading">
+          <p className="eyebrow">Ruta de decisión</p>
+          <h2>De problema real a opción viable.</h2>
+        </div>
+        <div className="decision-steps">
+          <article>
+            <span>01</span>
+            <h3>Describe tu situación</h3>
+            <p>
+              Comunidad, tipo de propiedad, señal actual, cortes, trabajo,
+              cámaras, escuela o negocio.
+            </p>
+          </article>
+          <article>
+            <span>02</span>
+            <h3>Compara alternativas</h3>
+            <p>
+              Internet fijo, celular, radioenlace, satélite y cualquier proveedor
+              local con cobertura real.
+            </p>
+          </article>
+          <article>
+            <span>03</span>
+            <h3>Confirma condiciones</h3>
+            <p>
+              Disponibilidad, costos vigentes, instalación, energía, obstrucciones
+              y términos oficiales.
             </p>
           </article>
         </div>
