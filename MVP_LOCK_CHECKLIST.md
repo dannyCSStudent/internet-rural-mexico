@@ -1,0 +1,23 @@
+# Internet Rural México — MVP Lock Checklist
+
+- [x] Brand locked
+- [x] Domain preference locked: `internetrural.mx`
+- [x] Tagline locked
+- [x] Supporting message locked
+- [x] Initial audience research completed
+- [x] Initial geographic laboratory selected: Tiquicheo/Michoacán
+- [x] MVP requirements locked
+- [x] SEO strategy established
+- [x] Existing Turborepo selected as technical foundation
+- [ ] Create GitHub repository: `dannyCSStudent/internet-rural-mexico`
+- [ ] Clone new repository locally
+- [ ] Add project-control/Codex documents
+- [ ] Run Codex Task 01 — Foundation
+- [ ] Review Codex diff/report
+- [ ] Run local verification
+- [ ] Deploy web foundation to Vercel
+- [ ] Connect/verify domain
+- [ ] Build qualification experience
+- [ ] Publish first useful content
+- [ ] Launch organic acquisition
+- [ ] First eligible referral
