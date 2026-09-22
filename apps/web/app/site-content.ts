@@ -3,6 +3,8 @@ export const disclosure =
 
 export const siteUrl = "https://internetrural.mx";
 
+export const starlinkReferralUrl = "https://starlink.com?referral=RC-308210-47943-8";
+
 export const lastVerified = "15 de septiembre de 2026";
 
 export type SourceLink = {

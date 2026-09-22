@@ -2,9 +2,9 @@
 
 # Starlink Organic Referral Machine — Project Status
 
-**Last updated:** 2026-09-07  
-**Status:** 🟡 Foundation / Web app conversion started  
-**Current milestone:** Convert the template into the Internet Rural México web foundation
+**Last updated:** 2026-09-22  
+**Status:** 🟡 Web MVP foundation in progress  
+**Current milestone:** Build the active web MVP without backend, auth, or mobile work
 
 ## 1. Executive status
 
@@ -59,7 +59,7 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [ ] First video
 - [ ] First short
 - [ ] First social post
-- [ ] Qualification tool
+- [x] Qualification tool (initial client-side MVP)
 - [ ] Launch website
 - [ ] Begin organic distribution
 - [ ] First referral click
@@ -153,6 +153,7 @@ When ready, tell Codex:
 | 2026-09-07 | Codex will handle engineering |
 | 2026-09-07 | Start with small web MVP |
 | 2026-09-07 | Documentation before coding |
+| 2026-09-22 | Initial client-side qualification tool added without database or accounts |
 
 ## 10. Current blockers
 
@@ -169,6 +170,7 @@ Complete Codex Task 01, then review the diff before moving to the next bounded M
 - [ ] First organic visitor
 - [ ] First referral click
 - [ ] First qualified lead
+- [x] Initial qualification tool
 - [ ] First eligible referral
 - [ ] First cash reward
 - [ ] Repeatable organic acquisition system

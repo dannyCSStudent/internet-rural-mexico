@@ -2,6 +2,8 @@
 
 import { useMemo, useState } from "react";
 
+import { disclosure, starlinkReferralUrl } from "../site-content";
+
 type QuestionId =
   | "propertyType"
   | "currentConnection"
@@ -174,6 +176,7 @@ export function QualifierTool() {
   const [answers, setAnswers] = useState<Answers>({});
 
   const answeredCount = Object.keys(answers).length;
+  const isComplete = answeredCount === questions.length;
   const score = useMemo(
     () =>
       Object.values(answers).reduce(
@@ -183,6 +186,10 @@ export function QualifierTool() {
     [answers],
   );
   const result = getResult(score, answers);
+  const canShowReferral =
+    isComplete &&
+    (result.label === "Buena opción para investigar" ||
+      result.label === "Posible opción; revisa costos y alternativas");
 
   return (
     <section className="qualifier" aria-labelledby="qualifier-title">
@@ -227,14 +234,50 @@ export function QualifierTool() {
           <span>
             {answeredCount} de {questions.length} respuestas
           </span>
-          <h2>{result.label}</h2>
-          <p>{result.summary}</p>
+          {isComplete ? (
+            <>
+              <h2>{result.label}</h2>
+              <p>{result.summary}</p>
+            </>
+          ) : (
+            <>
+              <h2>Completa las respuestas para ver una orientación.</h2>
+              <p>
+                El resultado aparecerá aquí cuando contestes todas las preguntas.
+                Puedes cambiar cualquier respuesta y se recalcula al momento.
+              </p>
+            </>
+          )}
         </div>
-        <ul>
-          {result.nextSteps.map((step) => (
-            <li key={step}>{step}</li>
-          ))}
-        </ul>
+        {isComplete ? (
+          <>
+            <ul>
+              {result.nextSteps.map((step) => (
+                <li key={step}>{step}</li>
+              ))}
+            </ul>
+            <div className="result-actions">
+              {canShowReferral ? (
+                <a
+                  className="button-primary"
+                  href={starlinkReferralUrl}
+                  rel="noreferrer"
+                  target="_blank"
+                >
+                  Ver disponibilidad en Starlink
+                </a>
+              ) : null}
+              <button
+                className="button-secondary"
+                onClick={() => setAnswers({})}
+                type="button"
+              >
+                Reiniciar evaluación
+              </button>
+            </div>
+            {canShowReferral ? <p className="result-disclosure">{disclosure}</p> : null}
+          </>
+        ) : null}
       </aside>
     </section>
   );
