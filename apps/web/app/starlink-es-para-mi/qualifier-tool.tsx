@@ -2,6 +2,7 @@
 
 import { useMemo, useState } from "react";
 
+import { trackReferralClick } from "../analytics";
 import { disclosure, starlinkReferralUrl } from "../site-content";
 
 type QuestionId =
@@ -261,6 +262,14 @@ export function QualifierTool() {
                 <a
                   className="button-primary"
                   href={starlinkReferralUrl}
+                  onClick={() =>
+                    trackReferralClick({
+                      destination: starlinkReferralUrl,
+                      label: "Ver disponibilidad en Starlink",
+                      page: "/starlink-es-para-mi",
+                      result: result.label,
+                    })
+                  }
                   rel="noreferrer"
                   target="_blank"
                 >

@@ -115,6 +115,12 @@ Initial measurement:
 - Traffic source
 - Content performance
 
+Current analytics state:
+- [x] Local referral-click event hook added for future analytics integration
+- [ ] Production analytics provider selected
+- [ ] Production analytics configured
+- [ ] Real visitor or referral-click data collected
+
 ## 7. Technical direction
 
 Preferred starting architecture:
@@ -154,6 +160,7 @@ When ready, tell Codex:
 | 2026-09-07 | Start with small web MVP |
 | 2026-09-07 | Documentation before coding |
 | 2026-09-22 | Initial client-side qualification tool added without database or accounts |
+| 2026-09-22 | Referral CTA click emits a local browser event only; no analytics provider configured |
 
 ## 10. Current blockers
 
