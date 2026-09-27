@@ -2,7 +2,7 @@
 
 # Starlink Organic Referral Machine — Project Status
 
-**Last updated:** 2026-09-22  
+**Last updated:** 2026-09-27
 **Status:** 🟡 Web MVP foundation in progress  
 **Current milestone:** Build the active web MVP without backend, auth, or mobile work
 
@@ -61,7 +61,7 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [ ] First social post
 - [x] Qualification tool (initial client-side MVP)
 - [x] Contact/intake draft tool (local only; no submission/storage)
-- [x] Technical SEO baseline (metadata, sitemap, robots, social preview image, web manifest)
+- [x] Technical SEO baseline (metadata, sitemap, robots, social preview image, web manifest, structured data)
 - [ ] Launch website
 - [ ] Begin organic distribution
 - [ ] First referral click
@@ -165,6 +165,7 @@ When ready, tell Codex:
 | 2026-09-22 | Referral CTA click emits a local browser event only; no analytics provider configured |
 | 2026-09-22 | Contact page creates a local message draft only; no form backend or personal-data storage |
 | 2026-09-27 | Added social-sharing image, web manifest, and explicit crawler/social metadata for the web MVP |
+| 2026-09-27 | Added WebSite and FAQPage structured data sourced from the visible web MVP content |
 
 ## 10. Current blockers
 

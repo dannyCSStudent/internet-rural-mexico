@@ -2,6 +2,8 @@ import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import { siteUrl } from "./site-content";
+import { StructuredData } from "./structured-data";
 
 const geistSans = Geist({
   variable: "--font-geist-sans",
@@ -63,6 +65,17 @@ const navigation = [
   { href: "/contacto", label: "Contacto" },
 ];
 
+const websiteSchema = {
+  "@context": "https://schema.org",
+  "@type": "WebSite",
+  "@id": `${siteUrl}/#website`,
+  name: "Internet Rural México",
+  url: siteUrl,
+  inLanguage: "es-MX",
+  description:
+    "Información independiente para entender opciones de Internet en zonas rurales de México.",
+};
+
 export default function RootLayout({
   children,
 }: Readonly<{
@@ -74,6 +87,7 @@ export default function RootLayout({
       className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
     >
       <body className="min-h-full">
+        <StructuredData data={websiteSchema} />
         <div className="site-shell">
           <header className="site-header">
             <Link className="brand-mark" href="/" aria-label="Internet Rural México">
