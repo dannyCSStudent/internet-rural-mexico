@@ -1,4 +1,4 @@
-import type { Metadata } from "next";
+import type { Metadata, Viewport } from "next";
 import { Geist, Geist_Mono } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
@@ -15,6 +15,7 @@ const geistMono = Geist_Mono({
 
 export const metadata: Metadata = {
   metadataBase: new URL("https://internetrural.mx"),
+  applicationName: "Internet Rural México",
   title: {
     default: "Internet Rural México",
     template: "%s | Internet Rural México",
@@ -23,6 +24,14 @@ export const metadata: Metadata = {
     "Información independiente para entender opciones de Internet en ranchos, fincas, casas y negocios rurales en México.",
   alternates: {
     canonical: "/",
+  },
+  robots: {
+    index: true,
+    follow: true,
+    googleBot: {
+      index: true,
+      follow: true,
+    },
   },
   openGraph: {
     title: "Internet Rural México",
@@ -33,6 +42,17 @@ export const metadata: Metadata = {
     locale: "es_MX",
     type: "website",
   },
+  twitter: {
+    card: "summary_large_image",
+    title: "Internet Rural México",
+    description:
+      "Internet para donde las opciones tradicionales no llegan.",
+  },
+};
+
+export const viewport: Viewport = {
+  colorScheme: "light",
+  themeColor: "#24523A",
 };
 
 const navigation = [

@@ -3,6 +3,35 @@ import Link from "next/link";
 
 import { lastVerified, pages, type PagePath } from "./site-content";
 
+const pageActions: Partial<
+  Record<PagePath, { secondaryHref: string; secondaryLabel: string }>
+> = {
+  "/internet-rural": {
+    secondaryHref: "/starlink-mexico",
+    secondaryLabel: "Entender Starlink en México",
+  },
+  "/starlink-mexico": {
+    secondaryHref: "/internet-rural",
+    secondaryLabel: "Comparar Internet rural",
+  },
+  "/faq": {
+    secondaryHref: "/starlink-mexico",
+    secondaryLabel: "Ver la guía de Starlink México",
+  },
+  "/sobre-nosotros": {
+    secondaryHref: "/internet-rural",
+    secondaryLabel: "Explorar Internet rural",
+  },
+  "/divulgacion": {
+    secondaryHref: "/starlink-mexico",
+    secondaryLabel: "Ver la guía de Starlink México",
+  },
+  "/privacidad": {
+    secondaryHref: "/contacto",
+    secondaryLabel: "Ir a contacto",
+  },
+};
+
 export function generatePageMetadata(path: PagePath): Metadata {
   const page = pages[path];
 
@@ -16,13 +45,22 @@ export function generatePageMetadata(path: PagePath): Metadata {
       title: page.metaTitle,
       description: page.metaDescription,
       url: path,
-      type: "article",
+      type: "website",
+    },
+    twitter: {
+      card: "summary_large_image",
+      title: page.metaTitle,
+      description: page.metaDescription,
     },
   };
 }
 
 export function FoundationPage({ path }: { path: PagePath }) {
   const page = pages[path];
+  const actions = pageActions[path] ?? {
+    secondaryHref: "/",
+    secondaryLabel: "Volver al inicio",
+  };
 
   return (
     <main className="simple-page">
@@ -68,8 +106,8 @@ export function FoundationPage({ path }: { path: PagePath }) {
         <Link className="button-primary" href="/starlink-es-para-mi">
           ¿Starlink es para mí?
         </Link>
-        <Link className="button-secondary" href="/">
-          Volver al inicio
+        <Link className="button-secondary" href={actions.secondaryHref}>
+          {actions.secondaryLabel}
         </Link>
       </div>
     </main>
