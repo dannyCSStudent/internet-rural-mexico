@@ -1,22 +1,28 @@
 import type { Metadata, Viewport } from "next";
-import { Geist, Geist_Mono } from "next/font/google";
+import { DM_Sans, JetBrains_Mono, Space_Grotesk } from "next/font/google";
 import Link from "next/link";
 import "./globals.css";
+import { ReferralLink } from "./referral-link";
 import { siteUrl } from "./site-content";
 import { StructuredData } from "./structured-data";
 
-const geistSans = Geist({
-  variable: "--font-geist-sans",
+const dmSans = DM_Sans({
+  variable: "--font-dm-sans",
   subsets: ["latin"],
 });
 
-const geistMono = Geist_Mono({
-  variable: "--font-geist-mono",
+const spaceGrotesk = Space_Grotesk({
+  variable: "--font-space-grotesk",
+  subsets: ["latin"],
+});
+
+const jetBrainsMono = JetBrains_Mono({
+  variable: "--font-jetbrains-mono",
   subsets: ["latin"],
 });
 
 export const metadata: Metadata = {
-  metadataBase: new URL("https://internetrural.mx"),
+  metadataBase: new URL(siteUrl),
   applicationName: "Internet Rural México",
   title: {
     default: "Internet Rural México",
@@ -37,9 +43,8 @@ export const metadata: Metadata = {
   },
   openGraph: {
     title: "Internet Rural México",
-    description:
-      "Internet para donde las opciones tradicionales no llegan.",
-    url: "https://internetrural.mx",
+    description: "Internet para donde las opciones tradicionales no llegan.",
+    url: siteUrl,
     siteName: "Internet Rural México",
     locale: "es_MX",
     type: "website",
@@ -47,8 +52,7 @@ export const metadata: Metadata = {
   twitter: {
     card: "summary_large_image",
     title: "Internet Rural México",
-    description:
-      "Internet para donde las opciones tradicionales no llegan.",
+    description: "Internet para donde las opciones tradicionales no llegan.",
   },
 };
 
@@ -84,13 +88,17 @@ export default function RootLayout({
   return (
     <html
       lang="es-MX"
-      className={`${geistSans.variable} ${geistMono.variable} h-full antialiased`}
+      className={`${dmSans.variable} ${spaceGrotesk.variable} ${jetBrainsMono.variable} h-full antialiased`}
     >
       <body className="min-h-full">
         <StructuredData data={websiteSchema} />
         <div className="site-shell">
           <header className="site-header">
-            <Link className="brand-mark" href="/" aria-label="Internet Rural México">
+            <Link
+              className="brand-mark"
+              href="/"
+              aria-label="Internet Rural México"
+            >
               <span className="brand-icon" aria-hidden="true" />
               <span>Internet Rural México</span>
             </Link>
@@ -100,14 +108,21 @@ export default function RootLayout({
                   {item.label}
                 </Link>
               ))}
+              <ReferralLink
+                className="referral-nav-link"
+                label="Ver Starlink directamente"
+                page="site-navigation"
+              >
+                Ver Starlink
+              </ReferralLink>
             </nav>
           </header>
           {children}
           <footer className="site-footer">
             <p>
-              Este sitio es independiente de Starlink. Algunos enlaces son enlaces
-              de referencia. Si realizas una compra elegible mediante uno de ellos,
-              puedo recibir una recompensa de Starlink.
+              Este sitio es independiente de Starlink. Algunos enlaces son
+              enlaces de referencia. Si realizas una compra elegible mediante
+              uno de ellos, puedo recibir una recompensa de Starlink.
             </p>
             <div>
               <Link href="/divulgacion">Divulgación</Link>

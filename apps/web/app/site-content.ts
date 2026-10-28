@@ -1,9 +1,10 @@
 export const disclosure =
   "Este sitio es independiente de Starlink. Algunos enlaces son enlaces de referencia. Si realizas una compra elegible mediante uno de ellos, puedo recibir una recompensa de Starlink.";
 
-export const siteUrl = "https://internetrural.mx";
+export const siteUrl = "https://internet-rural-mexico-api.vercel.app";
 
-export const starlinkReferralUrl = "https://starlink.com?referral=RC-308210-47943-8";
+export const starlinkReferralUrl =
+  "https://starlink.com?referral=RC-308210-47943-8";
 
 export const lastVerified = "15 de septiembre de 2026";
 
@@ -70,7 +71,8 @@ export const pages: Record<PagePath, MvpPage> = {
   },
   "/starlink-mexico": {
     title: "Starlink México",
-    metaTitle: "Starlink México para zonas rurales: qué revisar antes de comprar",
+    metaTitle:
+      "Starlink México para zonas rurales: qué revisar antes de comprar",
     metaDescription:
       "Información independiente sobre Starlink en México, disponibilidad, instalación, obstrucciones, planes y puntos que debes confirmar en fuentes oficiales.",
     kicker: "Información independiente",

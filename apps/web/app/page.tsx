@@ -2,6 +2,7 @@ import Link from "next/link";
 import type { Metadata } from "next";
 
 import { disclosure } from "./site-content";
+import { ReferralLink } from "./referral-link";
 
 export const metadata: Metadata = {
   title: "Internet Rural México",
@@ -27,10 +28,21 @@ export default function Home() {
           <p className="eyebrow"><span className="eyebrow-line" /> Información independiente sobre conectividad rural</p>
           <h1>Internet para donde las opciones tradicionales <em>no llegan.</em></h1>
           <p className="hero-copy">Entiende tus opciones antes de gastar en Internet. Comparamos tecnologías, costos y alcances para que conectes tu territorio con claridad.</p>
-          <div className="hero-actions">
-            <Link className="button button-primary" href="/starlink-es-para-mi">¿Starlink es para mí? <span aria-hidden="true">↗</span></Link>
-            <Link className="button button-ghost" href="/internet-rural">Ver opciones de Internet rural <span aria-hidden="true">↓</span></Link>
-          </div>
+        <div className="hero-actions">
+  <Link className="button button-primary" href="/starlink-es-para-mi">
+    ¿Starlink es para mí? <span aria-hidden="true">↗</span>
+  </Link>
+  <Link className="button button-ghost" href="/internet-rural">
+    Ver opciones de Internet rural <span aria-hidden="true">↓</span>
+  </Link>
+  <ReferralLink
+    className="button-referral"
+    label="Ver Starlink directamente"
+    page="/"
+  >
+    Ver Starlink directamente
+  </ReferralLink>
+</div>
           <p className="hero-disclosure">{disclosure}</p>
         </div>
         <div className="hero-footer shell" aria-hidden="true"><span>19° 26&apos; N / 99° 08&apos; O</span><span>Conectividad sin importar la distancia</span><span>Desliza para explorar ↓</span></div>

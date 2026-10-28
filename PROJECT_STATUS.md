@@ -2,7 +2,7 @@
 
 # Starlink Organic Referral Machine — Project Status
 
-**Last updated:** 2026-09-27
+**Last updated:** 2026-10-28
 **Status:** 🟡 Web MVP foundation in progress  
 **Current milestone:** Build the active web MVP without backend, auth, or mobile work
 
@@ -51,7 +51,7 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [x] Choose final stack
 - [x] Create Git repository
 - [x] Initialize application
-- [ ] Configure deployment
+- [x] Configure deployment (Vercel temporary domain)
 - [ ] Build MVP website
 
 ### Content / marketing
@@ -166,6 +166,8 @@ When ready, tell Codex:
 | 2026-09-22 | Contact page creates a local message draft only; no form backend or personal-data storage |
 | 2026-09-27 | Added social-sharing image, web manifest, and explicit crawler/social metadata for the web MVP |
 | 2026-09-27 | Added WebSite and FAQPage structured data sourced from the visible web MVP content |
+| 2026-10-28 | Deployed web MVP to Vercel on a temporary `vercel.app` domain while the permanent domain is selected |
+| 2026-10-28 | Updated canonical, sitemap, social, and structured-data base URL to the active Vercel deployment |
 
 ## 10. Current blockers
 
