@@ -1,10 +1,10 @@
 # Internet Rural México — Brand Decision
 
-**Status: LOCKED FOR MVP — 2026-09-08**
+**Status: LOCKED FOR MVP — 2026-10-29**
 
 - Brand: **Internet Rural México**
-- Primary domain: `internetrural.mx` (confirm at registrar before purchase)
-- Backups: `internetruralmexico.mx`, `internetruralmexico.com`
+- Primary domain: `www.internetrural.online`
+- Previous preference: `internetrural.mx` (unavailable within the initial budget)
 - Tagline: **Internet para donde las opciones tradicionales no llegan.**
 - Supporting message: **Entiende tus opciones antes de gastar en Internet.**
 - Initial market: Tiquicheo → Michoacán → rural Mexico

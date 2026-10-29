@@ -1,7 +1,7 @@
 export const disclosure =
   "Este sitio es independiente de Starlink. Algunos enlaces son enlaces de referencia. Si realizas una compra elegible mediante uno de ellos, puedo recibir una recompensa de Starlink.";
 
-export const siteUrl = "https://internet-rural-mexico-api.vercel.app";
+export const siteUrl = "https://www.internetrural.online";
 
 export const starlinkReferralUrl =
   "https://starlink.com?referral=RC-308210-47943-8";

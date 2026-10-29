@@ -21,7 +21,7 @@ Inspect the repository structure and current git status before editing.
 
 Brand: Internet Rural México
 
-Primary domain: `internetrural.mx` (confirm at registrar before purchase)
+Primary domain: `www.internetrural.online`
 
 Tagline: `Internet para donde las opciones tradicionales no llegan.`
 
@@ -83,7 +83,7 @@ Use:
 - Charcoal `#1F2933`
 - Off White `#F7F5EF`
 
-Typography: Inter or Geist Sans, depending on what the existing project supports cleanly.
+Typography: Space Grotesk for display text, DM Sans for body text, and JetBrains Mono for technical labels.
 
 Visual direction: trustworthy, rural, modern, simple, mobile-first. No Starlink/SpaceX branding or imagery implying official affiliation.
 

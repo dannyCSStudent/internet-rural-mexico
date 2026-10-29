@@ -2,9 +2,9 @@
 
 # Starlink Organic Referral Machine — Project Status
 
-**Last updated:** 2026-10-28
-**Status:** 🟡 Web MVP foundation in progress  
-**Current milestone:** Build the active web MVP without backend, auth, or mobile work
+**Last updated:** 2026-10-29
+**Status:** 🟢 Web MVP deployed on custom domain
+**Current milestone:** Measure the live web MVP and prepare its first useful content
 
 ## 1. Executive status
 
@@ -51,8 +51,8 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [x] Choose final stack
 - [x] Create Git repository
 - [x] Initialize application
-- [x] Configure deployment (Vercel temporary domain)
-- [ ] Build MVP website
+- [x] Configure deployment (Vercel custom domain)
+- [x] Build and deploy MVP website
 
 ### Content / marketing
 - [ ] First article
@@ -62,18 +62,18 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [x] Qualification tool (initial client-side MVP)
 - [x] Contact/intake draft tool (local only; no submission/storage)
 - [x] Technical SEO baseline (metadata, sitemap, robots, social preview image, web manifest, structured data)
-- [ ] Launch website
+- [x] Launch website on custom domain
 - [ ] Begin organic distribution
 - [ ] First referral click
 - [ ] First eligible referral
 
-## 4. Current phase: Foundation
+## 4. Current phase: Live website MVP
 
 Immediate work:
-1. Convert the active web app from starter-template content to Internet Rural México.
-2. Keep API and mobile dormant during the MVP foundation.
-3. Establish the locked MVP routes with foundation-level content.
-4. Verify lint, type checks, build, and development startup where practical.
+1. Keep API and mobile dormant while validating the live web MVP.
+2. Add a privacy-respecting production analytics provider before promotion.
+3. Submit the sitemap to Google Search Console after the canonical-domain deployment.
+4. Publish the first useful rural-connectivity guide and link it into the qualification flow.
 
 ## 5. What we are NOT building yet
 
@@ -168,6 +168,7 @@ When ready, tell Codex:
 | 2026-09-27 | Added WebSite and FAQPage structured data sourced from the visible web MVP content |
 | 2026-10-28 | Deployed web MVP to Vercel on a temporary `vercel.app` domain while the permanent domain is selected |
 | 2026-10-28 | Updated canonical, sitemap, social, and structured-data base URL to the active Vercel deployment |
+| 2026-10-29 | Connected and verified `www.internetrural.online` in Vercel; it is now the production site URL |
 
 ## 10. Current blockers
 
@@ -175,12 +176,12 @@ None for the web foundation. Current Starlink pricing, availability, plan detail
 
 ## 11. Next action
 
-Complete Codex Task 01, then review the diff before moving to the next bounded MVP task.
+Deploy the canonical-domain update, confirm `https://www.internetrural.online/sitemap.xml`, then configure production analytics before organic promotion.
 
 ## 12. Success milestones
 
 - [x] Repository initialized
-- [ ] Website MVP live
+- [x] Website MVP live
 - [ ] First organic visitor
 - [ ] First referral click
 - [ ] First qualified lead

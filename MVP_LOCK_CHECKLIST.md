@@ -1,7 +1,7 @@
 # Internet Rural México — MVP Lock Checklist
 
 - [x] Brand locked
-- [x] Domain preference locked: `internetrural.mx`
+- [x] Domain connected and verified: `www.internetrural.online`
 - [x] Tagline locked
 - [x] Supporting message locked
 - [x] Initial audience research completed
@@ -15,8 +15,8 @@
 - [ ] Run Codex Task 01 — Foundation
 - [ ] Review Codex diff/report
 - [ ] Run local verification
-- [ ] Deploy web foundation to Vercel
-- [ ] Connect/verify domain
+- [x] Deploy web foundation to Vercel
+- [x] Connect/verify domain
 - [ ] Build qualification experience
 - [ ] Publish first useful content
 - [ ] Launch organic acquisition
