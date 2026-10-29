@@ -71,8 +71,8 @@ The software/marketing system itself has **not** been built yet. We are intentio
 
 Immediate work:
 1. Keep API and mobile dormant while validating the live web MVP.
-2. Add a privacy-respecting production analytics provider before promotion.
-3. Submit the sitemap to Google Search Console after the canonical-domain deployment.
+2. Review Vercel Web Analytics after the next production deployment.
+3. Choose a custom-event-capable provider or plan before treating referral clicks as measured.
 4. Publish the first useful rural-connectivity guide and link it into the qualification flow.
 
 ## 5. What we are NOT building yet
@@ -119,8 +119,9 @@ Initial measurement:
 
 Current analytics state:
 - [x] Local referral-click event hook added for future analytics integration
-- [ ] Production analytics provider selected
-- [ ] Production analytics configured
+- [x] Vercel Web Analytics selected for anonymous page views and referrer data
+- [x] Vercel Web Analytics configured in code; pending production deployment
+- [ ] Referral CTA click measurement in production (requires custom-event support)
 - [ ] Real visitor or referral-click data collected
 
 ## 7. Technical direction
@@ -169,6 +170,7 @@ When ready, tell Codex:
 | 2026-10-28 | Deployed web MVP to Vercel on a temporary `vercel.app` domain while the permanent domain is selected |
 | 2026-10-28 | Updated canonical, sitemap, social, and structured-data base URL to the active Vercel deployment |
 | 2026-10-29 | Connected and verified `www.internetrural.online` in Vercel; it is now the production site URL |
+| 2026-10-29 | Selected Vercel Web Analytics for anonymous page and referrer measurement; custom referral-click events remain deferred |
 
 ## 10. Current blockers
 
@@ -176,7 +178,7 @@ None for the web foundation. Current Starlink pricing, availability, plan detail
 
 ## 11. Next action
 
-Deploy the canonical-domain update, confirm `https://www.internetrural.online/sitemap.xml`, then configure production analytics before organic promotion.
+Deploy Vercel Web Analytics, confirm page views and referrers in the Vercel dashboard, then publish the first useful rural-connectivity guide.
 
 ## 12. Success milestones
 

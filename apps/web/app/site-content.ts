@@ -258,11 +258,15 @@ export const pages: Record<PagePath, MvpPage> = {
       "Política de privacidad inicial de Internet Rural México para el MVP.",
     kicker: "Versión inicial",
     description:
-      "Política base para el MVP. Se actualizará si agregamos formularios, analítica avanzada o almacenamiento de datos.",
+      "Política base para el MVP, incluida la analítica anónima de visitas. Se actualizará si agregamos formularios, analítica avanzada o almacenamiento de datos.",
     sections: [
       {
         heading: "Datos mínimos",
         body: "En esta etapa el sitio no requiere cuentas de usuario ni base de datos propia para operar.",
+      },
+      {
+        heading: "Analítica anónima",
+        body: "Usamos Vercel Web Analytics para conocer páginas visitadas, fuentes de referencia y tendencias agregadas. Esta medición no usa cookies ni busca identificar a visitantes individuales.",
       },
       {
         heading: "Contacto",
@@ -270,7 +274,7 @@ export const pages: Record<PagePath, MvpPage> = {
       },
       {
         heading: "Cambios futuros",
-        body: "Cuando se agreguen mediciones, formularios o herramientas, esta página deberá explicar qué datos se recopilan, con qué propósito y cómo se protegen.",
+        body: "Si agregamos formularios, analítica avanzada o nuevas herramientas, esta página explicará qué datos adicionales se recopilan, con qué propósito y cómo se protegen.",
       },
       {
         heading: "Datos sensibles",
