@@ -41,31 +41,49 @@ export type PagePath =
 
 export const pages: Record<PagePath, MvpPage> = {
   "/internet-rural": {
-    title: "Internet rural",
-    metaTitle: "Internet rural para ranchos, fincas y casas de campo",
+    title: "Internet rural: guía para ranchos, fincas y casas de campo",
+    metaTitle: "Internet rural: cómo elegir conexión para un rancho o finca",
     metaDescription:
-      "Guía independiente para comparar Internet fijo, celular, radioenlaces y satélite en zonas rurales de México.",
-    kicker: "Guía base",
+      "Guía práctica e independiente para comparar Internet fijo, celular, radioenlaces y satélite en zonas rurales de México.",
+    kicker: "Guía práctica",
     description:
-      "Compara opciones cuando el Internet fijo no llega, la señal celular falla o necesitas conectar una propiedad rural.",
+      "Un método sencillo para comparar opciones cuando el Internet fijo no llega, la señal celular falla o necesitas conectar una propiedad rural.",
     sections: [
       {
-        heading: "Empieza por el uso real",
-        body: "No es lo mismo querer WhatsApp y YouTube que depender de videollamadas, cámaras de seguridad, pagos de negocio o trabajo remoto. El uso define cuánto importa la estabilidad.",
+        heading: "1. Define el problema antes de comparar proveedores",
+        body: "Anota qué falla hoy: falta total de servicio, señal celular intermitente, lentitud nocturna, cortes eléctricos, Wi-Fi que no llega a toda la propiedad o un plan que no alcanza para el uso real. Una solución útil depende del problema específico, no solo de la velocidad que anuncia un proveedor.",
       },
       {
-        heading: "Compara lo disponible en tu zona",
-        body: "Revisa fibra o cobre si existen, Internet celular, radioenlaces locales y satélite. En muchos ranchos la mejor opción no es la más anunciada, sino la que realmente llega y se mantiene estable.",
+        heading: "2. Empieza por las opciones terrestres disponibles",
+        body: "Pregunta por fibra, cable o cobre si llegan a tu comunidad. Aunque parezcan poco probables en una zona rural, una cooperativa, proveedor local o instalación reciente puede cambiar la respuesta. Pide cobertura para la ubicación exacta, no solo para el municipio.",
       },
       {
-        heading: "Calcula el costo completo",
-        body: "Incluye equipo, mensualidad, instalación, soportes, cableado, energía eléctrica, router adicional si la propiedad es grande y cualquier costo de cancelación o cambio.",
+        heading: "3. Prueba la señal celular en el lugar donde se usará",
+        body: "La señal que ves junto a una carretera no siempre se comporta igual dentro de una casa, detrás de un cerro o en el punto donde trabajas. Si celular es una opción, prueba más de un operador y en distintos horarios antes de comprar antenas, routers o contratos largos.",
+      },
+      {
+        heading: "4. Busca radioenlaces locales cuando haya línea de vista",
+        body: "Algunos proveedores rurales instalan antenas que reciben señal desde una torre o punto cercano. Pregunta si ya atienden propiedades vecinas, qué equipo requieren, qué ocurre con tormentas o cortes eléctricos y quién da soporte si el enlace falla.",
+      },
+      {
+        heading: "5. Considera satélite cuando las alternativas no resuelven",
+        body: "El Internet satelital puede valer la pena investigar si no hay conexión terrestre confiable y necesitas una conexión para trabajo, escuela, cámaras o negocio. Antes de decidir, confirma disponibilidad, condiciones vigentes, energía, instalación segura y una vista despejada desde el punto de montaje.",
+      },
+      {
+        heading: "6. Calcula el costo completo, no solo la mensualidad",
+        body: "Incluye equipo, instalación, soportes, cableado, router o repetidores, energía eléctrica, respaldo para apagones y cualquier costo de cancelación o cambio. Para una propiedad grande, el reto puede ser distribuir Wi-Fi después de que la conexión llega al edificio principal.",
+      },
+      {
+        heading: "7. Haz una prueba de uso real antes de cerrar la decisión",
+        body: "Si puedes probar una opción, realiza las tareas que de verdad importan: una videollamada, envío de archivos, acceso remoto a cámaras, cobro con terminal o clases en línea. Pregunta también a vecinos con una necesidad parecida qué funciona y qué problemas siguen teniendo.",
       },
     ],
     checklist: [
       "Municipio, comunidad y tipo de propiedad.",
       "Uso principal: trabajo, escuela, cámaras, negocio o entretenimiento.",
       "Qué opciones ya probaste y por qué fallaron.",
+      "Puntos con señal celular y horarios en que la probaste.",
+      "Ubicación posible para equipo, cableado y router dentro de la propiedad.",
       "Presupuesto mensual y costo inicial que sí puedes asumir.",
     ],
   },

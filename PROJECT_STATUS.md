@@ -55,7 +55,7 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [x] Build and deploy MVP website
 
 ### Content / marketing
-- [ ] First article
+- [x] First practical rural-Internet guide prepared; pending production deployment
 - [ ] First video
 - [ ] First short
 - [ ] First social post
@@ -73,7 +73,7 @@ Immediate work:
 1. Keep API and mobile dormant while validating the live web MVP.
 2. Review Vercel Web Analytics after the next production deployment.
 3. Choose a custom-event-capable provider or plan before treating referral clicks as measured.
-4. Publish the first useful rural-connectivity guide and link it into the qualification flow.
+4. Deploy the first useful rural-connectivity guide, then begin measured organic distribution.
 
 ## 5. What we are NOT building yet
 
@@ -178,7 +178,7 @@ None for the web foundation. Current Starlink pricing, availability, plan detail
 
 ## 11. Next action
 
-Deploy Vercel Web Analytics, confirm page views and referrers in the Vercel dashboard, then publish the first useful rural-connectivity guide.
+Deploy the Vercel Analytics and rural-Internet guide updates, confirm page views and referrers, then begin measured organic distribution.
 
 ## 12. Success milestones
 
