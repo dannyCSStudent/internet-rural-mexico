@@ -2,7 +2,7 @@
 
 # Starlink Organic Referral Machine — Project Status
 
-**Last updated:** 2026-10-29
+**Last updated:** 2026-10-30
 **Status:** 🟢 Web MVP deployed on custom domain
 **Current milestone:** Measure the live web MVP and prepare its first useful content
 
@@ -55,7 +55,7 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [x] Build and deploy MVP website
 
 ### Content / marketing
-- [x] First practical rural-Internet guide prepared; pending production deployment
+- [x] First practical rural-Internet guide prepared, including technology comparison; pending production deployment
 - [ ] First video
 - [ ] First short
 - [ ] First social post
@@ -171,6 +171,7 @@ When ready, tell Codex:
 | 2026-10-28 | Updated canonical, sitemap, social, and structured-data base URL to the active Vercel deployment |
 | 2026-10-29 | Connected and verified `www.internetrural.online` in Vercel; it is now the production site URL |
 | 2026-10-29 | Selected Vercel Web Analytics for anonymous page and referrer measurement; custom referral-click events remain deferred |
+| 2026-10-30 | Added a technology comparison aid to the rural-Internet guide; it remains general guidance, not an availability or pricing claim |
 
 ## 10. Current blockers
 

@@ -77,6 +77,39 @@ export function FoundationPage({ path }: { path: PagePath }) {
           </article>
         ))}
       </section>
+      {page.comparison ? (
+        <section
+          className="comparison-block"
+          aria-labelledby="comparison-title"
+        >
+          <div className="comparison-heading">
+            <p className="section-kicker">Comparación orientativa</p>
+            <h2 id="comparison-title">{page.comparison.title}</h2>
+            <p>{page.comparison.description}</p>
+          </div>
+          <div className="comparison-grid">
+            {page.comparison.technologies.map((technology) => (
+              <article key={technology.name}>
+                <h3>{technology.name}</h3>
+                <dl>
+                  <div>
+                    <dt>Puede encajar si...</dt>
+                    <dd>{technology.bestFor}</dd>
+                  </div>
+                  <div>
+                    <dt>Confirma antes de gastar</dt>
+                    <dd>{technology.checkFirst}</dd>
+                  </div>
+                  <div>
+                    <dt>Considera</dt>
+                    <dd>{technology.tradeOffs}</dd>
+                  </div>
+                </dl>
+              </article>
+            ))}
+          </div>
+        </section>
+      ) : null}
       {page.checklist ? (
         <section className="checklist-block" aria-labelledby="checklist-title">
           <h2 id="checklist-title">Antes de decidir</h2>

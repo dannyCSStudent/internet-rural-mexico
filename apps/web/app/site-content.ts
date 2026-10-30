@@ -18,6 +18,13 @@ type ContentSection = {
   body: string;
 };
 
+type TechnologyComparison = {
+  name: string;
+  bestFor: string;
+  checkFirst: string;
+  tradeOffs: string;
+};
+
 type MvpPage = {
   title: string;
   metaTitle: string;
@@ -25,6 +32,11 @@ type MvpPage = {
   kicker: string;
   description: string;
   sections: ContentSection[];
+  comparison?: {
+    title: string;
+    description: string;
+    technologies: TechnologyComparison[];
+  };
   checklist?: string[];
   sources?: SourceLink[];
 };
@@ -78,6 +90,49 @@ export const pages: Record<PagePath, MvpPage> = {
         body: "Si puedes probar una opción, realiza las tareas que de verdad importan: una videollamada, envío de archivos, acceso remoto a cámaras, cobro con terminal o clases en línea. Pregunta también a vecinos con una necesidad parecida qué funciona y qué problemas siguen teniendo.",
       },
     ],
+    comparison: {
+      title: "Comparación rápida de tecnologías",
+      description:
+        "Esta tabla es una orientación inicial, no una confirmación de cobertura. La opción correcta depende de la dirección exacta, el terreno, el uso y las condiciones que cada proveedor confirme.",
+      technologies: [
+        {
+          name: "Internet fijo terrestre",
+          bestFor:
+            "Propiedades donde fibra, cable o cobre llegan realmente hasta la ubicación.",
+          checkFirst:
+            "Cobertura en la dirección, costo de instalación, contrato y estabilidad que reportan vecinos cercanos.",
+          tradeOffs:
+            "Puede no estar disponible fuera de la mancha urbana o requerir una instalación costosa para llegar al predio.",
+        },
+        {
+          name: "Datos móviles 4G o 5G",
+          bestFor:
+            "Uso flexible o moderado cuando la señal se mantiene buena dentro de la propiedad.",
+          checkFirst:
+            "Pruebas con más de un operador, horarios de saturación, límite de datos y señal en el punto de uso real.",
+          tradeOffs:
+            "La cobertura y el rendimiento pueden cambiar por ubicación, clima, hora y cantidad de usuarios conectados a la red móvil.",
+        },
+        {
+          name: "Radioenlace o inalámbrico fijo",
+          bestFor:
+            "Comunidades con un proveedor local que ya cubre la zona y tiene una ruta de señal viable.",
+          checkFirst:
+            "Si el proveedor visita el predio, qué equipo instala, soporte disponible, energía y posibles obstáculos entre antenas.",
+          tradeOffs:
+            "La línea de vista, el clima intenso y el mantenimiento de la red local pueden afectar el servicio.",
+        },
+        {
+          name: "Internet satelital",
+          bestFor:
+            "Propiedades sin una alternativa terrestre confiable que necesitan conectar trabajo, escuela, seguridad o negocio.",
+          checkFirst:
+            "Disponibilidad oficial, costo total vigente, punto de montaje seguro, vista despejada al cielo, energía y Wi-Fi dentro de la propiedad.",
+          tradeOffs:
+            "Requiere equipo e instalación; las obstrucciones, el clima extremo y las condiciones de la red pueden afectar la experiencia.",
+        },
+      ],
+    },
     checklist: [
       "Municipio, comunidad y tipo de propiedad.",
       "Uso principal: trabajo, escuela, cámaras, negocio o entretenimiento.",
