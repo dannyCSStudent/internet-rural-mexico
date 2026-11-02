@@ -4,7 +4,7 @@
 
 **Last updated:** 2026-11-02
 **Status:** 🟢 Web MVP deployed on custom domain
-**Current milestone:** Measure the live web MVP and prepare its first useful content
+**Current milestone:** Begin measured organic distribution for the live web MVP
 
 ## 1. Executive status
 
@@ -56,7 +56,7 @@ The software/marketing system itself has **not** been built yet. We are intentio
 
 ### Content / marketing
 - [x] First practical rural-Internet guide deployed, including technology comparison
-- [x] Starlink Mexico guide expanded with installation, power, weather, and alternative-option checks; pending production deployment
+- [x] Starlink Mexico guide expanded with installation, power, weather, and alternative-option checks; deployed and mobile-inspected
 - [ ] First video
 - [ ] First short
 - [ ] First social post
@@ -64,6 +64,7 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [x] Contact/intake draft tool (local only; no submission/storage)
 - [x] Technical SEO baseline (metadata, sitemap, robots, social preview image, web manifest, structured data)
 - [x] Launch website on custom domain
+- [x] No-budget organic distribution guide created
 - [ ] Begin organic distribution
 - [ ] First referral click
 - [ ] First eligible referral
@@ -74,7 +75,7 @@ Immediate work:
 1. Keep API and mobile dormant while validating the live web MVP.
 2. Review Vercel Web Analytics weekly for landing pages and referrers.
 3. Choose a custom-event-capable provider or plan before treating referral clicks as measured.
-4. Deploy the expanded Starlink guide, then begin measured organic distribution.
+4. Follow the first week of `ORGANIC_DISTRIBUTION_GUIDE.md`, then review Vercel Analytics and Search Console weekly.
 
 ## 5. What we are NOT building yet
 
@@ -174,6 +175,7 @@ When ready, tell Codex:
 | 2026-10-29 | Selected Vercel Web Analytics for anonymous page and referrer measurement; custom referral-click events remain deferred |
 | 2026-10-30 | Added a technology comparison aid to the rural-Internet guide; it remains general guidance, not an availability or pricing claim |
 | 2026-11-02 | Expanded the Starlink guide with official-source-backed checks for alternatives, power, installation, and weather |
+| 2026-11-02 | Expanded Starlink guide deployed and inspected on mobile; no-budget organic distribution guide created |
 
 ## 10. Current blockers
 
@@ -181,7 +183,7 @@ None for the web foundation. Current Starlink pricing, availability, plan detail
 
 ## 11. Next action
 
-Deploy the expanded Starlink guide, then begin measured organic distribution using the rural-Internet and Starlink guides as helpful entry points.
+Complete week 1 of `ORGANIC_DISTRIBUTION_GUIDE.md`: configure one or two truthful profiles, identify permitted local communities, answer two real questions, and publish the first educational post and short video.
 
 ## 12. Success milestones
 
