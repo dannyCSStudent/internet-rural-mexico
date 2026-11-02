@@ -2,7 +2,7 @@
 
 # Starlink Organic Referral Machine — Project Status
 
-**Last updated:** 2026-10-30
+**Last updated:** 2026-11-02
 **Status:** 🟢 Web MVP deployed on custom domain
 **Current milestone:** Measure the live web MVP and prepare its first useful content
 
@@ -55,7 +55,8 @@ The software/marketing system itself has **not** been built yet. We are intentio
 - [x] Build and deploy MVP website
 
 ### Content / marketing
-- [x] First practical rural-Internet guide prepared, including technology comparison; pending production deployment
+- [x] First practical rural-Internet guide deployed, including technology comparison
+- [x] Starlink Mexico guide expanded with installation, power, weather, and alternative-option checks; pending production deployment
 - [ ] First video
 - [ ] First short
 - [ ] First social post
@@ -71,9 +72,9 @@ The software/marketing system itself has **not** been built yet. We are intentio
 
 Immediate work:
 1. Keep API and mobile dormant while validating the live web MVP.
-2. Review Vercel Web Analytics after the next production deployment.
+2. Review Vercel Web Analytics weekly for landing pages and referrers.
 3. Choose a custom-event-capable provider or plan before treating referral clicks as measured.
-4. Deploy the first useful rural-connectivity guide, then begin measured organic distribution.
+4. Deploy the expanded Starlink guide, then begin measured organic distribution.
 
 ## 5. What we are NOT building yet
 
@@ -120,9 +121,9 @@ Initial measurement:
 Current analytics state:
 - [x] Local referral-click event hook added for future analytics integration
 - [x] Vercel Web Analytics selected for anonymous page views and referrer data
-- [x] Vercel Web Analytics configured in code; pending production deployment
+- [x] Vercel Web Analytics configured and collecting anonymous traffic data
 - [ ] Referral CTA click measurement in production (requires custom-event support)
-- [ ] Real visitor or referral-click data collected
+- [x] Real visitor data collected via Vercel Web Analytics
 
 ## 7. Technical direction
 
@@ -172,6 +173,7 @@ When ready, tell Codex:
 | 2026-10-29 | Connected and verified `www.internetrural.online` in Vercel; it is now the production site URL |
 | 2026-10-29 | Selected Vercel Web Analytics for anonymous page and referrer measurement; custom referral-click events remain deferred |
 | 2026-10-30 | Added a technology comparison aid to the rural-Internet guide; it remains general guidance, not an availability or pricing claim |
+| 2026-11-02 | Expanded the Starlink guide with official-source-backed checks for alternatives, power, installation, and weather |
 
 ## 10. Current blockers
 
@@ -179,7 +181,7 @@ None for the web foundation. Current Starlink pricing, availability, plan detail
 
 ## 11. Next action
 
-Deploy the Vercel Analytics and rural-Internet guide updates, confirm page views and referrers, then begin measured organic distribution.
+Deploy the expanded Starlink guide, then begin measured organic distribution using the rural-Internet and Starlink guides as helpful entry points.
 
 ## 12. Success milestones
 

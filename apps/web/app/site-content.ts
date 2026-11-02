@@ -6,7 +6,7 @@ export const siteUrl = "https://www.internetrural.online";
 export const starlinkReferralUrl =
   "https://starlink.com?referral=RC-308210-47943-8";
 
-export const lastVerified = "15 de septiembre de 2026";
+export const lastVerified = "2 de noviembre de 2026";
 
 export type SourceLink = {
   label: string;
@@ -147,7 +147,7 @@ export const pages: Record<PagePath, MvpPage> = {
     metaTitle:
       "Starlink México para zonas rurales: qué revisar antes de comprar",
     metaDescription:
-      "Información independiente sobre Starlink en México, disponibilidad, instalación, obstrucciones, planes y puntos que debes confirmar en fuentes oficiales.",
+      "Guía independiente sobre Starlink en México: disponibilidad, instalación, energía, clima, obstrucciones y alternativas que debes revisar antes de comprar.",
     kicker: "Información independiente",
     description:
       "Punto de partida para entender cuándo Starlink puede ser una opción y qué debes confirmar en fuentes oficiales antes de comprar.",
@@ -168,11 +168,29 @@ export const pages: Record<PagePath, MvpPage> = {
         heading: "Energía y Wi-Fi dentro de la propiedad",
         body: "Además del kit, revisa energía estable, ubicación del router, paredes gruesas, distancia a cuartos o cámaras y si necesitarás cableado o equipo de red adicional.",
       },
+      {
+        heading: "Cuándo no es la mejor primera opción",
+        body: "Antes de elegir satélite, compara fibra, cable, señal celular estable o radioenlace local si realmente llegan a tu propiedad. Si ya tienes una conexión fija confiable, no puedes instalar con seguridad, el costo total te presiona o hay demasiadas obstrucciones, otra solución puede convenirte más.",
+      },
+      {
+        heading: "Energía: calcula el sistema completo",
+        body: "El consumo cambia según el kit, temperatura, ubicación y uso. Si dependes de paneles solares, baterías o generador, revisa la especificación oficial del equipo que comprarías y dimensiona también router, red Wi-Fi y respaldo para apagones; no calcules solo la antena.",
+      },
+      {
+        heading: "Instalación: la vista despejada y la seguridad importan",
+        body: "Revisa obstrucciones desde la altura y el lugar reales donde iría el equipo. Árboles, ramas, postes y techos pueden provocar interrupciones. Antes de subir a un techo, perforar muros o tender cable cerca de electricidad, evalúa si necesitas un instalador profesional.",
+      },
+      {
+        heading: "Lluvia, viento y tormentas",
+        body: "El equipo está diseñado para distintas condiciones climáticas, pero lluvia intensa, nieve, granizo o viento pueden causar degradación o cortes momentáneos. Protege la instalación, considera supresor de sobretensión si corresponde a tu sistema eléctrico y planifica qué harás durante cortes de energía.",
+      },
     ],
     checklist: [
       "Consulta disponibilidad con la dirección exacta o zona aproximada.",
       "Revisa plan, equipo, mensualidad y términos vigentes.",
       "Escanea obstrucciones desde el punto donde instalarías el equipo.",
+      "Calcula consumo, respaldo eléctrico y Wi-Fi para toda la propiedad.",
+      "Compara al menos una opción fija, celular o de radioenlace que realmente llegue a tu predio.",
       "Confirma si el enlace de referido aplica a tu compra y país.",
     ],
     sources: [
@@ -183,6 +201,14 @@ export const pages: Record<PagePath, MvpPage> = {
       {
         label: "Starlink: comprobar obstrucciones",
         href: "https://www.starlink.com/support/article/bcbf0078-be81-d345-4bce-ebbcfa196f56",
+      },
+      {
+        label: "Starlink: consumo de energía por kit",
+        href: "https://www.starlink.com/support/article/18836c7e-2d97-6153-fe67-c18427bd0558",
+      },
+      {
+        label: "Starlink: clima extremo y calidad del servicio",
+        href: "https://www.starlink.com/es/support/article/d95f8988-53bb-98d5-badc-604b4f609638",
       },
       {
         label: "Starlink: programa de referidos",
